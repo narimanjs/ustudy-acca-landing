@@ -5,7 +5,7 @@ const StatsSection = () => {
     <section className={styles.statsSection}>
       <div className={styles.card}>
         <img
-          src='/graduates.png'
+          src='/assets/img/graduates.png'
           alt='Graduates'
         />
         <h3>10 000 успешных студентов</h3>
@@ -17,7 +17,7 @@ const StatsSection = () => {
 
       <div className={styles.card}>
         <img
-          src='/teachers.png'
+          src='/assets/img/teachers.png'
           alt='Teachers'
         />
         <h3>100 опытных преподавателей</h3>
@@ -29,7 +29,7 @@ const StatsSection = () => {
 
       <div className={styles.card}>
         <img
-          src='/tasks.png'
+          src='/assets/img/tasks.png'
           alt='Test tasks'
         />
         <h3>Доступ к 2000 тестовым заданиям</h3>
@@ -41,7 +41,7 @@ const StatsSection = () => {
 
       <div className={styles.card}>
         <img
-          src='/online.png'
+          src='/assets/img/online.png'
           alt='Online classes'
         />
         <h3>2000 часов онлайн-занятий</h3>

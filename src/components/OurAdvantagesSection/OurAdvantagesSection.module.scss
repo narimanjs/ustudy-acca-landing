@@ -22,8 +22,8 @@
   }
 
   .vector2 {
-    bottom: 255px;
-    right: 55px;
+    bottom: 300px;
+    right: 80px;
     width: 300px;
     height: auto;
   }
@@ -67,6 +67,7 @@
         flex: 1;
         margin: 0;
         padding-bottom: 42px;
+        padding-left: 42px;
         padding-top: 42px;
       }
       &:first-child p {

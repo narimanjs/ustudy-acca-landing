@@ -9,13 +9,13 @@ const OurAdvantagesSection = () => {
       <div className={styles.content}>
         <div className={styles.vector1}>
           <img
-            src='/adv-vector1.png'
+            src='/assets/img/adv-vector1.png'
             alt='background vector 1'
           />
         </div>
         <div className={styles.vector2}>
           <img
-            src='/adv-vector2.png'
+            src='/assets/img/adv-vector2.png'
             alt='background vector 2'
           />
         </div>
