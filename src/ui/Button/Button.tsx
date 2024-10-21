@@ -2,7 +2,7 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
   text: string;
-  color: "primary" | "secondary" | "success";
+  color: "primary" | "secondary";
   size?: string;
   onClick?: () => void;
   disableScale?: boolean;
