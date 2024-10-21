@@ -17,17 +17,17 @@
     position: relative;
     flex-direction: column;
 
-    .logo a {
-      color: rgba(255, 255, 255, 1);
-      svg {
-        fill: currentColor;
-        transition: fill 0.3s ease;
-      }
-
-      &:hover {
-        color: #be8ebe;
+    .logo {
+      img {
+        width: 200px;
+        transition: transform 0.5s ease, filter 0.5s ease;
+        &:hover {
+          transform: scale(1.05);
+          filter: brightness(1.2);
+        }
       }
     }
+
     .socials {
       display: flex;
       gap: 20px;
@@ -85,6 +85,20 @@
         font-size: 28px;
         font-weight: 400;
         list-style: none;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+          color: #ffcc33;
+        }
+
+        &:active {
+          color: #ff9900;
+        }
       }
     }
   }

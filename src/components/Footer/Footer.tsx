@@ -1,4 +1,3 @@
-import MyIcon from "#/ui/MyIcon/MyIcon";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -7,18 +6,29 @@ const Footer = () => {
       <div className={styles.leftSection}>
         <div className={styles.logo}>
           <a href='/'>
-            <MyIcon color='rgba(255, 255, 255, 1)' />
+            <img
+              src='/assets/img/UStudy_footer.svg'
+              alt='ustudy logo'
+            />
           </a>
         </div>
 
         <div className={styles.socials}>
-          <a href='https://instagram.com'>
+          <a
+            href='https://www.instagram.com/ustudykazakhstan/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img
               src='/assets/icons/instagram.svg'
               alt='Instagram'
             />
           </a>
-          <a href='https://facebook.com'>
+          <a
+            href='https://facebook.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img
               src='/assets/icons/facebook.svg'
               alt='Facebook'
@@ -43,8 +53,12 @@ const Footer = () => {
         </div>
         <div className={styles.contacts}>
           <p>Контакты</p>
-          <p>Телефон: +7771756585</p>
-          <p>Почта: ustudy@mail.ru</p>
+          <p>
+            Телефон: <a href='tel:+77001400505'>+7 (700) 140 05 05 </a>
+          </p>
+          <p>
+            Почта: <a href='mailto:info@ustudy.kz'> info@ustudy.kz</a>
+          </p>
         </div>
       </div>
 
