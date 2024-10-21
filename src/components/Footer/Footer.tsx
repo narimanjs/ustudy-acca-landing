@@ -1,3 +1,4 @@
+import MyIcon from "#/ui/MyIcon/MyIcon";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -6,10 +7,7 @@ const Footer = () => {
       <div className={styles.leftSection}>
         <div className={styles.logo}>
           <a href='/'>
-            <img
-              src='/assets/img/UStudy_footer.svg'
-              alt='ustudy logo'
-            />
+            <MyIcon color='rgba(255, 255, 255, 1)' />
           </a>
         </div>
 
