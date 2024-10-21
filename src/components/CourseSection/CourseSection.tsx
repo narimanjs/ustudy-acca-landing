@@ -1,11 +1,11 @@
 import styles from "./CourseSection.module.scss";
 import Button from "#/ui/Button/Button";
-import Modal from "#/ui/Modal/Modal";
-import Form from "#/ui/Form/Form";
-import useModal from "#/utils/hooks/useModal";
+// import Modal from "#/ui/Modal/Modal";
+// import Form from "#/ui/Form/Form";
+// import useModal from "#/utils/hooks/useModal";
 
 const CourseSection = () => {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // const { isModalOpen, openModal, closeModal } = useModal();
   return (
     <section className={styles.courseSection}>
       <span className={styles.flask1}>
@@ -57,16 +57,16 @@ const CourseSection = () => {
           <Button
             text='Записаться на курс'
             color='primary'
-            onClick={openModal}
+            // onClick={openModal}
           />
         </div>
       </div>
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
       >
         <Form onClose={closeModal} />
-      </Modal>
+      </Modal> */}
     </section>
   );
 };

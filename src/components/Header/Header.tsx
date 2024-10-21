@@ -1,12 +1,13 @@
 import styles from "./Header.module.scss";
 import Button from "#/ui/Button/Button";
-import Modal from "#/ui/Modal/Modal";
-import Form from "#/ui/Form/Form";
-import useModal from "#utils/hooks/useModal";
+// import Modal from "#/ui/Modal/Modal";
+// import Form from "#/ui/Form/Form";
+// import useModal from "#utils/hooks/useModal";
 import MyIcon from "#/ui/MyIcon/MyIcon";
 
 const Header = () => {
-  const { isModalOpen, openModal, closeModal } = useModal();
+  // Закомментировал модальное окно, так как оно не нужно
+  // const { isModalOpen, openModal, closeModal } = useModal();
 
   return (
     <>
@@ -29,22 +30,28 @@ const Header = () => {
             </li>
           </ul>
           <div className={styles.contactButton}>
-            <Button
-              text='Связаться с нами'
-              color='primary'
-              disableScale={true}
-              onClick={openModal}
-            />
+            <a
+              href='https://wa.me/77001400505'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button
+                text='Связаться с нами'
+                color='primary'
+                disableScale={true}
+                // onClick={openModal}
+              />
+            </a>
           </div>
         </nav>
       </header>
 
-      <Modal
+      {/* <Modal
         isOpen={isModalOpen}
         onClose={closeModal}
       >
         <Form onClose={closeModal} />
-      </Modal>
+      </Modal> */}
     </>
   );
 };
